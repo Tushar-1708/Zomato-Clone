@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp Form</title>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <style>
+
+    	body{
+    		background-color: rgba(192,192,192,0.3);
+    	}
+    	.container{
+    		width: 600px;
+    		border: 1px solid black;
+    		border-radius: 10px;
+    		background-color: rgba(255,255,255,1);
+    	}
+
+    	input{
+    		width: 500px;
+    		padding: 10px;
+    		margin: 10px;
+    	}
+
+    	button{
+    		width: 500px;
+    		margin: 5px;
+    		padding: 10px;
+    		background-color: rgba(200,0,0,0.7);
+    	}
+
+    	p{
+    		padding-left: 130px;
+    		font-size: 15px;
+    	}
+
+    	a{
+    		text-decoration: none;
+    		color: red;
+    	}
+    </style>
+</head>
+<body>
+	 <!-- Option 2: Separate Popper.js and Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+
+	<div class="container mx-auto display-block mt-5">
+			<form method="post" action="signup_php.php">
+				<h1 class="text-danger">SignUp</h1>
+				<hr style="width:580px;">
+				<input type="text" placeholder="Name" name="name">
+				<input type="text" placeholder="Mobile Number" name="mno">
+				<input type="email" placeholder="Email" name="email">
+				<input type="password" placeholder="Password" name="passw">
+				<button type="submit" name="signup" value="submit">Submit</button>
+				<hr style="width:580px;">
+				<p>Already have an account? <a href="zomato_login.html">Login Here!</a></p>
+			</form>
+		</div>
+</body>
+</html>
